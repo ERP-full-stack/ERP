@@ -1,0 +1,3 @@
+[submodule "src/public"]
+	path = src/public
+	url = https://github.com/ERP-full-stack/public.git
