@@ -1,0 +1,32 @@
+/*============= table list ================*/
+.lqy {
+  .default-table {
+    &.el-table--group {
+      border: 1px solid #dcdae2 !important;
+    }
+    &.el-table--border {
+      border: 1px solid #dcdae2 !important;
+      th {
+        background: #ebebeb !important;
+      }
+      td, th {
+        border-right: 1px solid #dcdae2  !important;
+        &:last-child {
+          border-right: 0 !important;
+        }
+      }
+    }
+    thead {
+      color: #333 !important;
+    }
+    td, th {
+      border-bottom: 1px solid #dcdae2 !important;
+    }
+    &.el-table--small th {
+      padding: 4px 0 !important;
+    }
+    &.el-table--small td {
+      padding: 2px 0 !important;
+    }
+  }
+}

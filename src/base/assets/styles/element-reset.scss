@@ -1,0 +1,61 @@
+/*============= 覆盖element-ui样式 =============*/
+@import './module/table';
+@import './module/query-form';
+@import './module/menu';
+@import './module/select';
+
+.lqy {
+  .iconfont {
+    font-size: 12px;
+  }
+  .el-button {
+    padding: 7px 10px;
+  }
+  .el-button [class*="icon-"] + span {
+    margin-left: 8px;
+  }
+  .el-button--text {
+    &:hover {
+      background: #f1f1f1;
+    }
+  }
+
+  /*============= el-pagination =============*/
+  .el-pagination {
+    display: flex;
+    padding: 0 !important;
+    margin-top: 5px;
+    .el-pagination__sizes {
+      flex: 1;
+    }
+    .el-select .el-input {
+      margin: 0 !important;
+    }
+  }
+
+
+  /*============= pagination ================*/
+  .lqy-pagination {
+    .btn-next {
+      margin-right: 0 !important;
+    }
+  }
+
+  /*============= 滚动条 ================*/
+  .el-table__body-wrapper {
+    &::-webkit-scrollbar {/*滚动条整体样式*/
+      width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+      height: 1px;
+    }
+    &::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+      background: #fff;
+    }
+    &::-webkit-scrollbar-track {/*滚动条里面轨道*/
+      -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+      border-radius: 10px;
+      background: #fff;
+    }
+  }
+}

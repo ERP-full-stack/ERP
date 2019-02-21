@@ -1,3 +1,6 @@
 [submodule "src/public"]
 	path = src/public
 	url = https://github.com/ERP-full-stack/public.git
+[submodule "src/report-form"]
+	path = src/report-form
+	url = https://github.com/ERP-full-stack/report-form.git

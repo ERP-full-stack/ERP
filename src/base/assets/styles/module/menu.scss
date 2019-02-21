@@ -1,0 +1,94 @@
+/**
+  导航栏样式重写
+ */
+@import './../variable';
+
+$menuHoverBg: rgba(0, 0, 0, .15) !important;
+
+.lqy {
+  .lqy-menu.el-menu {
+    > .el-menu-item {
+      height: 42px !important;
+      line-height: 42px !important;
+      padding-left: 18px !important;
+      background: $--color-26 !important;
+      .iconfont {
+        color: $primary;
+        font-size: 14px;
+        margin-right: 8px;
+      }
+      > span {
+        color: #000;
+      }
+    }
+    > .el-menu-item:hover {
+      background: $menuHoverBg;
+    }
+    > .el-submenu {
+      > .el-submenu__title {
+        height: 42px !important;
+        line-height: 42px !important;
+        padding-left: 18px !important;
+        background: $--color-26 !important;
+        > i {
+          color: $primary;
+        }
+        > span {
+          color: #000;
+        }
+      }
+      > .el-submenu__title:hover {
+        background: $menuHoverBg;
+      }
+      > .el-menu {
+        > .el-menu-item{
+          font-size: 12px;
+          width: 100%;
+          min-width: 100%;
+          color: #000;
+          padding: 0 0 0 48px !important;
+          height: 40px !important;
+          line-height: 40px !important;
+          background-color: #e9e8ed!important;
+        }
+        > .el-menu-item:hover {
+          background: $menuHoverBg;
+        }
+        > .el-submenu {
+          > .el-submenu__title {
+            font-size: 12px;
+            width: 100%;
+            min-width: 100%;
+            color: #000;
+            padding: 0 0 0 48px !important;
+            height: 40px !important;
+            line-height: 40px !important;
+            background-color: #e9e8ed!important;
+            &:hover {
+              background: $menuHoverBg;
+            }
+          }
+          > .el-menu {
+            > .el-menu-item {
+              font-size: 12px;
+              width: 100%;
+              min-width: 100%;
+              color: #000;
+              padding-left: 10px;
+              height: 40px !important;
+              line-height: 40px !important;
+              background-color: #e8e6ee!important;
+              &:hover {
+                background: $menuHoverBg;
+              }
+            }
+          }
+        }
+      }
+    }
+    .is-active span {
+      color: $--color-11 !important;
+      font-weight: 700;
+    }
+  }
+}

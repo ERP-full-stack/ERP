@@ -1,0 +1,15 @@
+/**
+  select重写
+ */
+@import './../variable';
+
+.lqy {
+  .el-select-dropdown {
+    .el-select-dropdown__item {
+      height: 30px !important;
+      line-height: 30px !important;
+      font-weight: normal !important;
+      font-size: 12px !important;
+    }
+  }
+}

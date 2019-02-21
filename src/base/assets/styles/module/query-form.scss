@@ -1,0 +1,35 @@
+/*============= query form ================*/
+
+.lqy {
+  .query-form {
+    .el-form--inline {
+      .el-form-item {
+        margin-bottom: 6px;
+        .el-form-item__label {
+          font-size: 12px;
+          color: #333;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .el-form--label-top {
+    .el-form-item__label {
+      font-size: 12px;
+      color: #333333;
+      font-weight: 500;
+      padding: 0;
+      height: 18px !important;
+      line-height: 12px;
+      display: inline-flex !important;
+      align-items: flex-start;
+      position: inherit !important;
+      transform: translateY(0) !important;
+    }
+    .query-form-btns {
+      display: flex;
+      align-items: flex-end;
+      height: 47px;
+    }
+  }
+}
